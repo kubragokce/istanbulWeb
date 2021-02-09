@@ -1,0 +1,29 @@
+#kayit,
+#giris  {
+  margin: 5rem;
+  padding: 2rem;
+  border-style: groove;
+  border-width: 0.15rem;
+  border-color: hsla(0, 0%, 100%, 0.7);
+}
+#kayit  h1,
+#giris h1 {
+  font-weight: bold;
+  margin-bottom: 2rem;
+  color: #315e8b;
+}
+#kayit button,
+#giris button {
+  background-color: #315e8b;
+  color: #f5f5f5;
+  border-radius: 4px;
+  width: 5rem;
+  margin: 1rem;
+}
+#kayit button:hover,
+#giris button:hover {
+  background-color: #f5f5f5;
+  color: #315e8b;
+  border-color: #315e8b;
+  border-radius: 4px;
+}

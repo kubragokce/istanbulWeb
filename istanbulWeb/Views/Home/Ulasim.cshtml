@@ -1,0 +1,42 @@
+﻿@model List<istanbulWeb.Models.Read>
+
+<!-- ***************************************************GRAFİKLER**********************************************************************-->
+@Html.Partial("_Grafik")
+<div id="myDIV">
+    <div class="row" id="grafikler">
+        <div class="col-sm-5" id="0">
+            <div class="w2-card-4">
+                <a href="@Url.Action("Table1","UlasimData")" id="link">
+                    <img src="~/iwpProje/Grafikler/Deniz iletmeleri bazìnda max yolculuk sayìsìì.PNG"
+                         class="card-img-top"
+                         alt="resim" />
+                    <h2>Deniz İşletmeleri Bazında Max Yolculuk Sayısı</h2>
+                </a>
+            </div>
+        </div>
+        <div class="col-sm-5" id="1">
+            <div class="w2-card-4">
+                <a href="@Url.Action("Table2","UlasimData")" id="link">
+                    <img src="../iwpProje/Grafikler/Karayollarì bazìnda araç ve hat sayìsì.PNG"
+                         class="card-img-top"
+                         alt="resim" />
+                    <h2>Karayolları bazında araç ve hat sayısı</h2>
+                </a>
+            </div>
+        </div>
+        <div class="col-sm-5" id="2">
+            <div class="w2-card-4">
+                <a href="@Url.Action("Table3","UlasimData")" id="link">
+                    <img src="~/iwpProje/Grafikler/karayollarì bazìnda max yolculuk sayìsì.PNG"
+                         class="card-img-top"
+                         alt="resim" />
+                    <h2>Karayolları bazında maksimum yolculuk sayısı</h2>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ReadMore Start-->
+
+@Html.Partial("_Read")

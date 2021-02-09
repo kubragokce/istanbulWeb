@@ -1,0 +1,44 @@
+#link {
+    text-decoration: none;
+  }
+  #link h2 {
+    color: #0a0a0a;
+    padding: 0.5rem;
+    border-radius: 4px;
+    margin: 0.5rem;
+  }
+  #link h2:hover {
+    color: #315e8b;
+  }
+  
+  #egitim p {
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+  #egitim h2 {
+    padding: 1rem;
+  }
+  #rcourners {
+    border-radius: 25px;
+    background: #315e8b;
+    color: #f5f5f5;
+    padding: 1rem;
+    margin-left: 8rem;
+    margin-right: 8rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    text-align: center;
+  }
+  #grafikler {
+    padding: 1rem;
+    margin-left: 4rem;
+  }
+  #grafikler .col-sm-5 {
+    padding: 1rem;
+    margin: 5rem;
+    border-style: groove;
+    border-width: 0.15rem;
+    text-align: center;
+    border-color: hsla(0, 0%, 100%, 0.7);
+  }
+  

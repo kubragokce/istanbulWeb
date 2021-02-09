@@ -1,0 +1,40 @@
+﻿@model List<istanbulWeb.Models.SehirTiyatrolarindaSergilenenOyunlars>
+<!-------------------------------------------------------Tablo-------------------------------------------------->
+
+<div class="container" id="myDIV">
+    <h2>2018-2020 Oyun Bazlı İzleyici Sayısı, Seans Sayısı ve Salon Doluluk Oranı</h2>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Repertuvar</th>
+                <th>Kategori</th>
+                <th>Oyun Adı</th>
+                <th>Toplam Adet</th>
+                <th>ID</th>
+                <th>tiyatro ID</th>
+            </tr>
+        </thead>
+        <tbody>
+
+
+            @foreach (var satir in Model)
+            {
+                <tr>
+
+                    <th>@satir.repertuvar</th>
+                    <th>@satir.kategori</th>
+                    <th>@satir.oyun_adi</th>
+                    <th>@satir.toplam_adet</th>
+                    <th>@satir.seans_sayisi</th>
+                    <th>@satir.doluluk_orani</th>
+                    <th>@satir.ID</th>
+                    <th>@satir.tiyatro_id</th>
+                </tr>
+
+            }
+
+        </tbody>
+    </table>
+
+
+</div>

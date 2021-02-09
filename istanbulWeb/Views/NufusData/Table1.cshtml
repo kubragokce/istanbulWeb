@@ -1,0 +1,32 @@
+﻿@model List<istanbulWeb.Models.NufusBilgileris>
+<!-------------------------------------------------------Tablo-------------------------------------------------->
+<div class="container" id="myDIV">
+    <h2>Belediye Nüfusları</h2>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Belediye İsmi</th>
+                <th>Nüfus</th>
+                <th> ID</th>
+
+            </tr>
+        </thead>
+        <tbody>
+
+
+            @foreach (var satir in Model)
+            {
+                <tr>
+
+                    <td>@satir.belediye_ismi</td>
+                    <td>@satir.nufus</td>
+                    <td>@satir.ID</td>
+                </tr>
+
+            }
+
+        </tbody>
+    </table>
+
+
+</div>

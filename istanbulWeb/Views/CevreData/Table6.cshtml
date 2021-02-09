@@ -1,0 +1,32 @@
+﻿@model List<istanbulWeb.Models.ToplamatikGeriKazanimOranis>
+<!-------------------------------------------------------Tablo-------------------------------------------------->
+
+<div class="container" id="myDIV">
+    <h2>Toplam Atık Geri Kazanım Miktarı</h2>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Yıl </th>
+                <th>Toplam Atık Geri Kazanım</th>
+                <th>ID</th>
+            </tr>
+        </thead>
+        <tbody>
+
+
+            @foreach (var satir in Model)
+            {
+                <tr>
+
+                    <th>@satir.Yil</th>
+                    <th>@satir.ToplamAtikGeriKazanim</th>
+                    <th>@satir.ID</th>
+                </tr>
+
+            }
+
+        </tbody>
+    </table>
+
+
+</div>

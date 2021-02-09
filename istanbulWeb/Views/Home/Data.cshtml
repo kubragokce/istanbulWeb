@@ -1,0 +1,235 @@
+﻿<!------------------------------------------------------------------------------------------------------------------------->
+<div class="container" style="font-size: 1.3rem" id="myDIV">
+    <h2>Data</h2>
+    <p>
+        <strong>Note:</strong> The <strong>data-parent</strong> attribute makes
+        sure that all collapsible elements under the specified parent will be
+        closed when one of the collapsible item is shown.
+    </p>
+    <div id="accordion">
+        <div class="card">
+            <div class="card-header">
+                <a class="card-link"
+                   data-toggle="collapse"
+                   href="#collapseOne"
+                   style="color: black">
+                    Eğitim
+                </a>
+            </div>
+            <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                <div class="card-body">
+                    <ul>
+                        <li>
+                            @Html.ActionLink("Okuma Yazma Bilen-Bilmeyen Kişi Sayısı", "Table1", "EgitimData")
+                        </li>
+                        <li>
+                            @Html.ActionLink("İstanbul İlköğretim İlkokul ve Ortaokul Öğrenci Sayıları", "Table2", "EgitimData")
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <a class="collapsed card-link"
+                   data-toggle="collapse"
+                   href="#collapseTwo"
+                   style="color: black">
+                    Ulaşım
+                </a>
+            </div>
+            <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                <div class="card-body">
+                    <ul>
+                        <li>
+                            @Html.ActionLink("Deniz İşletmeleri Bazında Max Yolculuk Sayısı", "Table1", "UlasimData")
+
+                        </li>
+                        <li>
+                            @Html.ActionLink("Karayolları bazında araç ve hat sayısı", "Table2", "UlasimData")
+
+                        </li>
+                        <li>
+                            @Html.ActionLink("Karayolları bazında maksimum yolculuk sayısı", "Table3", "UlasimData")
+
+                        </li>
+                        <li>
+                            @Html.ActionLink("İstanbulkart Dolum Merkezi Bilgileri", "Table4", "UlasimData")
+
+
+                        </li>
+                        <li>
+                            @Html.ActionLink("Raylı Sistemlere Ait İnternet Siteleri", "Table5", "UlasimData")
+
+                        </li>
+                        <li>
+                            @Html.ActionLink("Raylı Sistemlere Ait Tamamlanmış Şantiye Bilgileri", "Table6", "UlasimData")
+
+                        </li>
+                        <li>
+                            @Html.ActionLink("Raylı Sistemler Hat Bazlı Sefer Sayıları", "Table7", "UlasimData")
+
+
+                        </li>
+                        <li>
+                            @Html.ActionLink("Yolculuk Türü Bazında Yolcu Sayısı", "Table8", "UlasimData")
+
+                        </li>
+                        <li>
+                            @Html.ActionLink("İstasyonlar", "Table9", "UlasimData")
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <a class="collapsed card-link"
+                   data-toggle="collapse"
+                   href="#collapseThree"
+                   style="color: black">
+                    Çevre
+                </a>
+            </div>
+            <div id="collapseThree" class="collapse" data-parent="#accordion">
+                <div class="card-body">
+                    <ul>
+                        <li>
+                            @Html.ActionLink("İlçe Bazında Yıllara Göre Doğalgaz Tüketimi", "Table1", "CevreData")
+
+                        </li>
+                        <li>
+                            @Html.ActionLink("Baraj Doluluk Oranları", "Table2", "CevreData")
+
+
+                        </li>
+                        <li>
+                            @Html.ActionLink("Deniz Yüzeyi, Kıyı ve Plajlardan Toplanan Katı Atık Miktarı", "Table3", "CevreData")
+
+
+                        </li>
+                        <li>
+                            @Html.ActionLink("Gemi Kaynaklı Petrol Türevli Atıkların Susuzlaştırılmasıyla Geri Kazanılan Miktar", "Table4", "CevreData")
+
+
+                        </li>
+                        <li>
+                            @Html.ActionLink("Gemilerden Toplanan Atık Miktarı ve Türü", "Table5", "CevreData")
+
+                        </li>
+
+                        <li>
+                            @Html.ActionLink("Toplam Atık Geri Kazanım Miktarı", "Table6", "CevreData")
+
+                        </li>
+                        <li>
+                            @Html.ActionLink("İstanbul Genel Yeşil Alan Bilgiler 2004-2019", "Table7", "CevreData")
+
+                        </li>
+                        <li>
+                            @Html.ActionLink("İstanbul Güneş Enerji Santralleri Üretim Miktarları", "Table8", "CevreData")
+
+                        </li>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <a class="card-link"
+                   data-toggle="collapse"
+                   href="#collapseFive"
+                   style="color: black">
+                    Nüfus
+                </a>
+            </div>
+            <div id="collapseFive" class="collapse" data-parent="#accordion">
+                <div class="card-body">
+                    <ul>
+                        <li>
+                            @Html.ActionLink("Belediye Nüfusları", "Table1", "NufusData")
+                        </li>
+                        <li>
+                            @Html.ActionLink("Ortalama Hane Halkı Büyüklüğü", "Table2", "NufusData")
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <a class="card-link"
+                   data-toggle="collapse"
+                   href="#collapseSix"
+                   style="color: black">
+                    Kültür
+                </a>
+            </div>
+            <div id="collapseSix" class="collapse" data-parent="#accordion">
+                <div class="card-body">
+                    <ul>
+                        <li>
+                            @Html.ActionLink("2018-2020 Oyun Bazlı İzleyici Sayısı, Seans Sayısı ve Salon Doluluk Oranı", "Table1", "KulturData")
+
+                        </li>
+                        <li>
+                            @Html.ActionLink("Yıl Bazında Oyun Sayısı", "Table2", "KulturData")
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <a class="card-link"
+                   data-toggle="collapse"
+                   href="#collapseSeven"
+                   style="color: black">
+                    Doğal Afet
+                </a>
+            </div>
+            <div id="collapseSeven" class="collapse" data-parent="#accordion">
+                <div class="card-body">
+                    <ul>
+                        <li>
+                            @Html.ActionLink("İtfaiye Konum Verisi", "Table1", "DogalAfetData")
+
+                        </li>
+                        <li>
+                            @Html.ActionLink("Yangın İstatistikleri", "Table2", "DogalAfetData")
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <a class="card-link"
+                   data-toggle="collapse"
+                   href="#collapseNine"
+                   style="color: black">
+                    Spor
+                </a>
+            </div>
+            <div id="collapseNine" class="collapse" data-parent="#accordion">
+                <div class="card-body">
+                    <ul>
+                        <li>
+                            @Html.ActionLink("Spor Organizasyonları ve Sporcu Sayısı", "Table1", "SporData")
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

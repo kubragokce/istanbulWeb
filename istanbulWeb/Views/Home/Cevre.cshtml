@@ -1,0 +1,78 @@
+﻿@model List<istanbulWeb.Models.Read>
+<!-- ***************************************************GRAFİKLER**********************************************************************-->
+@Html.Partial("_Grafik")
+<div id="myDIV">
+    <div class="row" id="grafikler">
+        <div class="col-sm-5" id="0">
+            <div class="w2-card-4">
+                <a href="@Url.Action("Table1","CevreData")" id="link">
+                    <img src="~/iwpProje/Grafikler/ilce_baznda_yllara_gore_dogalgaz_tuketimi.png"
+                         class="card-img-top"
+                         alt="resim" />
+                    <h2>İlçe Bazında Yıllara Göre Doğalgaz Tüketimi</h2>
+                </a>
+            </div>
+        </div>
+        <div class="col-sm-5" id="1">
+            <div class="w2-card-4">
+                <a href="@Url.Action("Table2","CevreData")" id="link">
+                    <img src="~/iwpProje/grafikler/baraj doluluk oranì.PNG"
+                         class="card-img-top"
+                         alt="resim" />
+                    <h2>Baraj Doluluk Oranları</h2>
+                </a>
+            </div>
+        </div>
+        <div class="col-sm-5" id="2">
+            <div class="w2-card-4">
+                <a href="@Url.Action("Table3","CevreData")" id="link">
+                    <img src="~/iwpProje/Grafikler/Deniz yüzeyi ve kìyìlardan toplanan katì atìk  miktarì.PNG"
+                         class="card-img-top"
+                         alt="resim" />
+                    <h2>
+                        Deniz Yüzeyi, Kıyı ve Plajlardan Toplanan Katı Atık Miktarı
+                    </h2>
+                </a>
+            </div>
+        </div>
+        <div class="col-sm-5" id="3">
+            <div class="w2-card-4">
+                <a href="@Url.Action("Table4","CevreData")" id="link">
+                    <img src="~/iwpProje/Grafikler/gemi kaynaklì petrol türevli atìklarìn geri kazanìlan miktar.PNG"
+                         class="card-img-top"
+                         alt="resim" />
+                    <h2>
+                        Gemi Kaynaklı Petrol Türevli Atıkların Susuzlaştırılmasıyla Geri
+                        Kazanılan Miktar
+                    </h2>
+                </a>
+            </div>
+        </div>
+        <div class="col-sm-5" id="4">
+            <div class="w2-card-4">
+                <a href="@Url.Action("Table5","CevreData")" id="link">
+                    <img src="~/iwpProje/Grafikler/Gemilerden toplanan atìklar.PNG"
+                         class="card-img-top"
+                         alt="resim" />
+                    <h2>Gemilerden Toplanan Atık Miktarı ve Türü</h2>
+                </a>
+
+            </div>
+        </div>
+
+        <div class="col-sm-5" id="5">
+            <div class="w2-card-4">
+                <a href="@Url.Action("Table6","CevreData")" id="link">
+                    <img src="~/iwpProje/Grafikler/toplam atìk geri kazanìm  miktarì.PNG"
+                         class="card-img-top"
+                         alt="resim" />
+                    <h2>Toplam Atık Geri Kazanım Miktarı</h2>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ReadMore Start-->
+@Html.Partial("_Read")
+
+

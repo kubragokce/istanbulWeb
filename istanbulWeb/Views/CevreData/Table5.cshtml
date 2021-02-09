@@ -1,0 +1,40 @@
+﻿@model List<istanbulWeb.Models.GemiAtikTuruveMiktaris>
+<!-------------------------------------------------------Tablo-------------------------------------------------->
+
+<div class="container" id="myDIV">
+    <h2>Gemilerden Toplanan Atık Miktarı ve Türü</h2>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Gemilerden Toplanan Atık</th>
+                <th>2015</th>
+                <th>2016</th>
+                <th>2017</th>
+                <th>2018</th>
+                <th>2019</th>
+                <th>ID</th>
+            </tr>
+        </thead>
+        <tbody>
+
+
+            @foreach (var satir in Model)
+            {
+                <tr>
+
+                    <th>@satir.gemilerdenToplananAtik</th>
+                    <th>@satir.y2015</th>
+                    <th>@satir.y2016</th>
+                    <th>@satir.y2017</th>
+                    <th>@satir.y2018</th>
+                    <th>@satir.y2019</th>
+                    <th>@satir.ID</th>
+                </tr>
+
+            }
+
+        </tbody>
+    </table>
+
+
+</div>

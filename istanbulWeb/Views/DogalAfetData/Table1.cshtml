@@ -1,0 +1,34 @@
+﻿@model List<istanbulWeb.Models.itfaiyeKonums>
+<!-------------------------------------------------------Tablo-------------------------------------------------->
+
+<div class="container" id="myDIV">
+    <h2>İtfaiye Konum Verisi</h2>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>İstasyon Adı</th>
+                <th>İlçe</th>
+                <th>Konum</th>
+                <th>ID</th>
+            </tr>
+        </thead>
+        <tbody>
+
+
+            @foreach (var satir in Model)
+            {
+                <tr>
+
+                    <th>@satir.istasyon_adi</th>
+                    <th>@satir.ilce</th>
+                    <th>@satir.konum</th>
+                    <th>@satir.ID</th>
+                </tr>
+
+            }
+
+        </tbody>
+    </table>
+
+
+</div>

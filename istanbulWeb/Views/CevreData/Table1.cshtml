@@ -1,0 +1,40 @@
+﻿@model List<istanbulWeb.Models.dogalgazTuketimverileris>
+<!-------------------------------------------------------Tablo-------------------------------------------------->
+
+<div class="container" id="myDIV">
+    <h2>İlçe Bazında Yıllara Göre Doğalgaz Tüketimi</h2>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>İlçe</th>
+                <th>2015</th>
+                <th>2016</th>
+                <th>2017</th>
+                <th>2018</th>
+                <th>2019</th>
+                <th>ID</th>
+            </tr>
+        </thead>
+        <tbody>
+
+
+            @foreach (var satir in Model)
+            {
+                <tr>
+
+                    <th>@satir.ilce</th>
+                    <th>@satir.y2015</th>
+                    <th>@satir.y2016</th>
+                    <th>@satir.y2017</th>
+                    <th>@satir.y2018</th>
+                    <th>@satir.y2019</th>
+                    <th>@satir.ID</th>
+                </tr>
+
+            }
+
+        </tbody>
+    </table>
+
+
+</div>

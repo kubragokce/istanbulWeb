@@ -1,0 +1,22 @@
+﻿@model List<istanbulWeb.Models.Read>
+
+<!-- ***************************************************GRAFİKLER**********************************************************************-->
+@Html.Partial("_Grafik")
+<div id="myDIV">
+    <div class="row" id="grafikler">
+        <div class="col-sm-5" id="0">
+            <div class="w2-card-4">
+                @Html.ActionLink("Okuma Yazma Bilen-Bilmeyen Kişi Sayısı", "Table1", "EgitimData")
+                <a href="@Url.Action("Table1","EgitimData")" id="link">
+                    <img src="../iwpProje/Grafikler/Okuma_yazma_bilen_bilmeyen_kisi.png"
+                         class="card-img-top"
+                         alt="resim" />
+                    <h2>Okuma Yazma Bilen-Bilmeyen Kişi Sayısı</h2>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ReadMore Start-->
+@Html.Partial("_Read")

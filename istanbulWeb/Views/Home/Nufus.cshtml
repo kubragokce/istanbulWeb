@@ -1,0 +1,32 @@
+﻿@model List<istanbulWeb.Models.Read>
+
+<!-- ***************************************************GRAFİKLER**********************************************************************-->
+@Html.Partial("_Grafik")
+<div id="myDIV">
+    <div class="row" id="grafikler">
+        <div class="col-sm-5" id="0">
+            <div class="w2-card-4">
+                <a href="@Url.Action("Table1","NufusData")" id="link">
+                    <img src="~/iwpProje/Grafikler/belediye_nufuslar.png"
+                         class="card-img-top"
+                         alt="resim" />
+                    <h2>Belediye Nüfusları</h2>
+                </a>
+            </div>
+        </div>
+        <div class="col-sm-5" id="1">
+            <div class="w2-card-4">
+                <a href="@Url.Action("Table2","NufusData")" id="link">
+                    <img src="~/iwpProje/Grafikler/Ortalama hane halkì büyüklüºü.PNG"
+                         class="card-img-top"
+                         alt="resim" />
+                    <h2>Ortalama Hane Halkı Büyüklüğü</h2>
+                </a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- ReadMore Start-->
+@Html.Partial("_Read")

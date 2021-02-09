@@ -1,0 +1,37 @@
+﻿@model List<istanbulWeb.Models.SporOrganizasyonuveSporcuSayilaris>
+<!-------------------------------------------------------Tablo-------------------------------------------------->
+
+<div class="container" id="myDIV">
+    <h2>Spor Organizasyonu ve Sporcu Sayıları</h2>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Yıl</th>
+                <th>Ulusal Spor Organizasyonu Sayısı</th>
+                <th>Uluslararası Spor Organizasyonu Sayısı</th>
+                <th>Sporcu Sayısı</th>
+
+            </tr>
+        </thead>
+        <tbody>
+
+
+            @foreach (var satir in Model)
+            {
+                <tr>
+
+                    <th>@satir.ID</th>
+                    <th>@satir.Yil</th>
+                    <th>@satir.UlusalSporOrganizasyonuSayisi</th>
+                    <th>@satir.UluslararasiSporOrganizasyonuSayisi</th>
+                    <th>@satir.SporcuSayisi</th>
+                </tr>
+
+            }
+
+        </tbody>
+    </table>
+
+
+</div>

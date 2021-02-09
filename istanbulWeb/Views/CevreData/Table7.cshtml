@@ -1,0 +1,64 @@
+﻿@model List<istanbulWeb.Models.YeniYapilanYesilAlanMiktaris>
+<!-------------------------------------------------------Tablo-------------------------------------------------->
+
+<div class="container" id="myDIV">
+    <h2>İstanbul Genel Yeşil Alan Bilgiler 2004-2019</h2>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Yıl </th>
+                <th>2004</th>
+                <th>2005</th>
+                <th>2006</th>
+                <th>2007</th>
+                <th>2008</th>
+                <th>2009</th>
+                <th>2010</th>
+                <th>2011</th>
+                <th>2012</th>
+                <th>2013</th>
+                <th>2014</th>
+                <th>2015</th>
+                <th>2016</th>
+                <th>2017</th>
+                <th>2018</th>
+                <th>2019</th>
+                <th>TOPLAM</th>
+                <th>ID</th>
+            </tr>
+        </thead>
+        <tbody>
+
+
+            @foreach (var satir in Model)
+            {
+                <tr>
+
+                    <th>@satir.FAALIYETKONUSU</th>
+                    <th>@satir.y2004</th>
+                    <th>@satir.y2005</th>
+                    <th>@satir.y2006</th>
+                    <th>@satir.y2007</th>
+                    <th>@satir.y2008</th>
+                    <th>@satir.y2009</th>
+                    <th>@satir.y2010</th>
+                    <th>@satir.y2011</th>
+                    <th>@satir.y2012</th>
+                    <th>@satir.y2013</th>
+                    <th>@satir.y2014</th>
+                    <th>@satir.y2015</th>
+                    <th>@satir.y2016</th>
+                    <th>@satir.y2017</th>
+                    <th>@satir.y2018</th>
+                    <th>@satir.y2019</th>
+                    <th>@satir.TOPLAM</th>
+                    <th>@satir.ID</th>
+                </tr>
+
+            }
+
+        </tbody>
+    </table>
+
+
+</div>

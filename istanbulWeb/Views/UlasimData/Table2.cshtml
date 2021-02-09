@@ -1,0 +1,42 @@
+﻿@model List<istanbulWeb.Models.KarayollariBazindaAracVeHatSayisis>
+<!-------------------------------------------------------Tablo-------------------------------------------------->
+<div class="container" id="myDIV">
+    <h2>Karayolları Bazında Araç ve Hat Sayısı</h2>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Yıl</th>
+                <th>IETT otobüs Araç Sayısı</th>
+                <th>IETT Metrobüs Araç Sayısı</th>
+                <th>Özel Halk Otobüsü Sayısı</th>
+                <th>Otobüs Sayısı</th>
+                <th>Toplam Araç Sayısı</th>
+                <th>Toplam Hat Sayısı</th>
+                <th>ID</th>
+
+            </tr>
+        </thead>
+        <tbody>
+
+
+            @foreach (var satir in Model)
+            {
+                <tr>
+
+                    <td>@satir.yil</td>
+                    <td>@satir.iettotobusAracSayisi</td>
+                    <td>@satir.iettmetrobusAracSayisi</td>
+                    <td>@satir.ozelHalkOtobusSayisi</td>
+                    <td>@satir.otobusSayisi</td>
+                    <td>@satir.ToplamAracSayisi</td>
+                    <td>@satir.ToplamHatSayisi</td>
+                    <td>@satir.ID</td>
+                </tr>
+
+            }
+
+        </tbody>
+    </table>
+
+
+</div>

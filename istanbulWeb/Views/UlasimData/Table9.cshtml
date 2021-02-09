@@ -1,0 +1,35 @@
+﻿@model List<istanbulWeb.Models.istasyonlars>
+<!-------------------------------------------------------Tablo-------------------------------------------------->
+<div class="container" id="myDIV">
+    <h2> İstasyonlar</h2>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>İstasyon Adı</th>
+                <th>Bulunduğu ilçe</th>
+                <th>Koordinat</th>
+                <th>ID</th>
+
+            </tr>
+        </thead>
+        <tbody>
+
+
+            @foreach (var satir in Model)
+            {
+                <tr>
+
+                    <td>@satir.istasyonAdi</td>
+                    <td>@satir.Bulunduguilce</td>
+                    <td>@satir.Koordinat</td>
+                    <td>@satir.ID</td>
+                </tr>
+
+
+            }
+
+        </tbody>
+    </table>
+
+
+</div>

@@ -1,0 +1,39 @@
+﻿@model List<istanbulWeb.Models.DenizİsletmeleriBazindaYolcus>
+<!-------------------------------------------------------Tablo-------------------------------------------------->
+<div class="container" id="myDIV">
+    <h2>Deniz İşletmeleri Bazında Max Yolculuk Sayısı</h2>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Yıl</th>
+                <th>IDO Yolculuk Sayısı</th>
+                <th>Şehir Hatları Max Yolculuk Sayısı</th>
+                <th>Özel Tekne Motor Max Yolculuk Sayısı</th>
+                <th>F5</th>
+                <th>ID</th>
+
+            </tr>
+        </thead>
+        <tbody>
+
+
+            @foreach (var satir in Model)
+            {
+                <tr>
+
+                    <td>@satir.Yil</td>
+                    <td>@satir.IDOistanbulDenizOtobusleriYolculukSayisi</td>
+                    <td>@satir.SehirHatlariMaxYolculukSayisi</td>
+                    <td>@satir.OzelTekneMotorMaxYolculukSayisi</td>
+                    <td>@satir.F5</td>
+                    <td>@satir.ID</td>
+                </tr>
+
+
+            }
+
+        </tbody>
+    </table>
+
+
+</div>

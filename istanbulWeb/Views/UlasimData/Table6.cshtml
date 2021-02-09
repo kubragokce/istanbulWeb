@@ -1,0 +1,34 @@
+﻿@model List<istanbulWeb.Models.RayliTamamlanmisSantiyes>
+<!-------------------------------------------------------Tablo-------------------------------------------------->
+<div class="container" id="myDIV">
+    <h2>Raylı Sistemlere Ait Tamamlanmış Şantiye Bilgileri</h2>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Hat Adı</th>
+                <th>Şantiye Bilgileri</th>
+                <th>Bitiş Tarihi</th>
+                <th>ID</th>
+
+            </tr>
+        </thead>
+        <tbody>
+
+
+            @foreach (var satir in Model)
+            {
+                <tr>
+
+                    <td>@satir.HatAdi</td>
+                    <td>@satir.SantiyeBilgileri</td>
+                    <td>@satir.BitisTarihi</td>
+                    <td>@satir.ID</td>
+                </tr>
+
+            }
+
+        </tbody>
+    </table>
+
+
+</div>

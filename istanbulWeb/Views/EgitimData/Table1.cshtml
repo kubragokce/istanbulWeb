@@ -1,0 +1,39 @@
+﻿@model List<istanbulWeb.Models.ilceBazliOkumaYazmaBilenBilmeyenKisiSayisis>
+<!-------------------------------------------------------Tablo-------------------------------------------------->
+
+<div class="container" id="myDIV">
+    <h2>İlçe Bazlı Okuma Yazma Bilen-Bilmeyen Kişi Sayısı</h2>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>İlçeler</th>
+                <th>Bilinmeyen</th>
+                <th>Okuma Yazma Bilen</th>
+                <th>Okuma Yazma Bilmeyen</th>
+                <th>ID</th>
+                <th>Eğitim ID</th>
+            </tr>
+        </thead>
+        <tbody>
+
+
+            @foreach (var satir in Model)
+            {
+                <tr>
+
+
+                    <th>@satir.ilceler</th>
+                    <th>@satir.bilinmeyen</th>
+                    <th>@satir.okuma_yazma_bilen</th>
+                    <th>@satir.okuma_yazma_bilmeyen</th>
+                    <th>@satir.ID</th>
+                    <th>@satir.egitim_id</th>
+                </tr>
+
+            }
+
+        </tbody>
+    </table>
+
+
+</div>

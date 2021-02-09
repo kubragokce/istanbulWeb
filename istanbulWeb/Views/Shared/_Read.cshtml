@@ -1,0 +1,47 @@
+﻿
+@model List<istanbulWeb.Models.Read>
+
+<div class="container-fluid" id="readmore">
+    <div class="columns" id="rcourners">
+        <div class="column">
+            <div class="content">
+                <h2>Read</h2>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container" id="myDIV" style="padding-bottom: 4rem">
+    @foreach (var m in Model)
+    {
+        <div class="card">
+            <img class="card-img-top mx-auto d-block"
+                 src=@m.ResimYolu
+                 alt="Card image"
+                 style="width: 60%;
+          padding: 2rem;" />
+            <div class="card-body"
+                 style="
+            font-size: 1.5rem;
+            padding: 4rem;
+            padding-left: 15rem;
+            padding-right: 15rem;
+          ">
+                <h1 class="card-title"><b>@m.Baslik</b> </h1>
+                <p class="card-text">
+                <p>
+                    @m.Paragraf
+                </p>
+                <p>
+                    @m.Paragraf2
+                </p>
+                </p>
+
+                <p class="card-text">
+                    <b>Kaynak:</b> <a href=@m.Kaynak target="_blank">@m.Kaynak</a>
+                </p>
+            </div>
+        </div>
+    }
+
+</div>

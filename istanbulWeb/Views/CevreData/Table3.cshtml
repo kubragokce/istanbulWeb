@@ -1,0 +1,34 @@
+﻿@model List<istanbulWeb.Models.ToplananKatiAtikMiktarlaris>
+<!-------------------------------------------------------Tablo-------------------------------------------------->
+
+<div class="container" id="myDIV">
+    <h2>Deniz Yüzeyi, Kıyı ve Plajlardan Toplanan Katı Atık Miktarı</h2>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Yıl</th>
+                <th>Deniz Yüzeyinden Toplanan Katı Atık</th>
+                <th>Kıyı ve Plajlardan Toplanan Katı Atık</th>
+                <th>ID</th>
+            </tr>
+        </thead>
+        <tbody>
+
+
+            @foreach (var satir in Model)
+            {
+                <tr>
+
+                    <th>@satir.Yil</th>
+                    <th>@satir.DenizYuzundenToplananKatiAtik</th>
+                    <th>@satir.KiyivePlajlardanToplananKatiAtik</th>
+                    <th>@satir.ID</th>
+                </tr>
+
+            }
+
+        </tbody>
+    </table>
+
+
+</div>

@@ -1,0 +1,34 @@
+﻿@model List<istanbulWeb.Models.YangininKaynaginiGoreDagilims>
+<!-------------------------------------------------------Tablo-------------------------------------------------->
+
+<div class="container" id="myDIV">
+    <h2>Yangının Kaynağına Göre Dağılım</h2>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Olay Tarihi Yıl</th>
+                <th>Yangın Kaynağı</th>
+                <th>Yangın Sayısı</th>
+                <th>ID</th>
+            </tr>
+        </thead>
+        <tbody>
+
+
+            @foreach (var satir in Model)
+            {
+                <tr>
+
+                    <th>@satir.OlayTarihiYil</th>
+                    <th>@satir.YanginKaynagi</th>
+                    <th>@satir.YanginSayisi</th>
+                    <th>@satir.ID</th>
+                </tr>
+
+            }
+
+        </tbody>
+    </table>
+
+
+</div>

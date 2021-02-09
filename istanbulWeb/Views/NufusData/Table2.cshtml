@@ -1,0 +1,32 @@
+﻿@model List<istanbulWeb.Models.HalkHaneBuyukluguSayisis>
+<!-------------------------------------------------------Tablo-------------------------------------------------->
+<div class="container" id="myDIV">
+    <h2>2018 Yılı İlçe Bazlı Ortalama Hane Halkı Büyüklüğü</h2>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>İlçe İsmi</th>
+                <th>Hane Halkı Büyüklüğü</th>
+                <th> ID</th>
+
+            </tr>
+        </thead>
+        <tbody>
+
+
+            @foreach (var satir in Model)
+            {
+                <tr>
+
+                    <td>@satir.ilceAdi</td>
+                    <td>@satir.HanehalkiBuyuklugu</td>
+                    <td>@satir.ID</td>
+                </tr>
+
+            }
+
+        </tbody>
+    </table>
+
+
+</div>

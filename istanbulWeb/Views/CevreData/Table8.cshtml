@@ -1,0 +1,38 @@
+﻿@model List<istanbulWeb.Models.GunesUretimMiktarlaris>
+<!-------------------------------------------------------Tablo-------------------------------------------------->
+
+<div class="container" id="myDIV">
+    <h2>İstanbul Güneş Enerji Santralleri Üretim Miktarları</h2>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Doğaya Sağlanan Ağaç Katkısı</th>
+                <th>Trafikten Çekilen Araç Sayısı</th>
+                <th>Enlem</th>
+                <th>Boylam</th>
+                <th>Açıklama</th>
+                <th>ID</th>
+            </tr>
+        </thead>
+        <tbody>
+
+
+            @foreach (var satir in Model)
+            {
+                <tr>
+
+                    <th>@satir.DogayaSaglananAgacKatkisi</th>
+                    <th>@satir.TrafiktenCekilenAracSayisi</th>
+                    <th>@satir.Enlem</th>
+                    <th>@satir.Boylam</th>
+                    <th>@satir.Aciklama</th>
+                    <th>@satir.ID</th>
+                </tr>
+
+            }
+
+        </tbody>
+    </table>
+
+
+</div>

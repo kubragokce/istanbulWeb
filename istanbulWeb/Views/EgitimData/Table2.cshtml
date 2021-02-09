@@ -1,0 +1,43 @@
+﻿@model List<istanbulWeb.Models.OgrenciSayilaris>
+<!-------------------------------------------------------Tablo-------------------------------------------------->
+
+<div class="container" id="myDIV">
+    <h2>İstanbul İlköğretim İlkokul ve Ortaokul Öğrenci Sayıları</h2>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Eğitim Dönemi</th>
+                <th>İlköğretim Erkek</th>
+                <th>İlköğretim Kadın</th>
+                <th>İlkokul Erkek</th>
+                <th>İlkokul Kadın</th>
+                <th>Ortaokul Erkek</th>
+                <th>Ortaokul Kadın</th>
+                <th>Eğitim ID</th>
+            </tr>
+        </thead>
+        <tbody>
+
+
+            @foreach (var satir in Model)
+            {
+                <tr>
+
+
+                    <th>@satir.egitim_donemi</th>
+                    <th>@satir.ilkogretimErkek</th>
+                    <th>@satir.ilkogretimKadin</th>
+                    <th>@satir.ilkokulErkek</th>
+                    <th>@satir.ilkokulKadin</th>
+                    <th>@satir.ortaokulErkek</th>
+                    <th>@satir.ortaokulKadin</th>
+                    <th>@satir.egitim_id</th>
+                </tr>
+
+            }
+
+        </tbody>
+    </table>
+
+
+</div>

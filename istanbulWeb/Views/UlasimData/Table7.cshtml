@@ -1,0 +1,51 @@
+﻿@model List<istanbulWeb.Models.RaylıiSisHatBazliSefers>
+<!-------------------------------------------------------Tablo-------------------------------------------------->
+<div class="container" id="myDIV">
+    <h2>Raylı Sistemler Hat Bazlı Sefer Sayıları</h2>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+             
+                <th>M1</th>
+                <th>M2</th>
+                <th>M3</th>
+                <th>M4</th>               
+                <th>M6</th>
+                <th>T1</th>
+                <th>T3</th>
+                <th>T4</th>
+                <th>F1</th>
+                <th>TF1</th>
+                <th>TF2</th>
+                <th>ID</th>
+
+            </tr>
+        </thead>
+        <tbody>
+
+
+            @foreach (var satir in Model)
+            {
+                <tr>
+
+                    
+                    <td>@satir.M1</td>
+                    <td>@satir.M2</td>
+                    <td>@satir.M3</td>
+                    <td>@satir.M4</td>
+                    <td>@satir.T1</td>
+                    <td>@satir.T3</td>
+                    <td>@satir.T4</td>
+                    <td>@satir.F1</td>
+                    <td>@satir.TF1</td>
+                    <td>@satir.TF2</td>
+                    <td>@satir.ID</td>
+                </tr>
+
+            }
+
+        </tbody>
+    </table>
+
+
+</div>

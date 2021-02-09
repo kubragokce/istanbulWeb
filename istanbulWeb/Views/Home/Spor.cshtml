@@ -1,0 +1,23 @@
+﻿@model List<istanbulWeb.Models.Read>
+
+<!-- ***************************************************GRAFİKLER**********************************************************************-->
+@Html.Partial("_Grafik")
+<div id="myDIV">
+    <div class="row" id="grafikler">
+        <div class="col-sm-5" id="0">
+            <div class="w2-card-4">
+                <a href="@Url.Action("Table1","SporData")" id="link">
+                    <img src="~/iwpProje/grafikler/spor organizasyonlarì ve sporcu sayìlarì.PNG"
+                         class="card-img-top"
+                         alt="resim" />
+                    <h2>Spor Organizasyonları ve Sporcu Sayısı</h2>
+                </a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<<!-- ReadMore Start-->
+@Html.Partial("_Read")
+
